@@ -24,11 +24,12 @@ public class TestUNO {
         
         Game g = new Game(1 , "Started");
         g.CreateGame();
-        Player p1 = new Player(" A Thae Tone");
+        
+        Player p1 = new Player("Augustine");
         g.AddPlayer(p1);        
-        Player p2 = new Player("   A Chit Sone");
+        Player p2 = new Player("A Chit Sone");
         g.AddPlayer(p2);
-        Player p3 = new Player(" Heart");
+        Player p3 = new Player("Heart");
         g.AddPlayer(p3);
         Player p4 = new Player("Awguzzteen");
         g.AddPlayer(p4);
@@ -36,8 +37,7 @@ public class TestUNO {
         g.AddPlayer(p5);
         
         g.DistributeCard();
-//        Deck d = new Deck();
-//        d.NewDeck();
+
         System.out.println(g);
     }
     
