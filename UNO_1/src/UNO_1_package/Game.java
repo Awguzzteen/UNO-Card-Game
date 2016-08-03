@@ -59,7 +59,11 @@ public class Game {
 
     private Card DiscardCard()
     {
-        return theDeck.getThedeck().get(0);
+        Card c = new Card();
+        c=theDeck.getThedeck().get(0);
+        theDeck.getThedeck().remove(c);
+        return c;
+        
     }
     /**
      * @return the listofplayers
